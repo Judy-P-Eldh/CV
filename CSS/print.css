@@ -1,0 +1,29 @@
+@media print {
+  .no-print, .print\:hidden {
+    display: none !important;
+  }
+  .shadow, .shadow-md, .shadow-lg {
+    box-shadow: none !important;
+  }
+  header {
+    break-after: avoid-page;
+    page-break-after: avoid;
+    break-inside: avoid;
+    padding: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  main {
+    break-before: avoid-page;
+    page-break-before: avoid;
+    break-inside: avoid;
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    box-shadow: none !important; /* Om du vill ta bort skugga vid print */
+    border-radius: 0 !important; /* Om du vill ta bort rundade hörn vid print */
+    padding: 1.5rem !important;  /* Justera padding om det behövs */
+  }
+  body {
+    font-size: 1rem;
+  }
+}
