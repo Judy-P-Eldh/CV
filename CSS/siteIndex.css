@@ -1,0 +1,244 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: #111827;
+    background-color: #F3F4F6;
+}
+
+header {
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+    border-bottom-right-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+    color: #ffffff;
+    background-color: #1E3A8A;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+main {
+    margin: auto;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    max-width: 42rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+#intro {
+    margin-bottom: 2rem;
+}
+
+#introRubrik {
+    margin-bottom: 0.75rem;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+    color: #1E3A8A;
+}
+
+#introContainer {
+    display: flex;
+    align-items: center;
+}
+
+#introText {
+    margin-right: 1.5rem;
+
+    >p {
+        margin-bottom: 0.5rem;
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+    }
+}
+
+#introBild {
+    object-fit: cover;
+    border-radius: 0.5rem;
+    width: 12rem;
+    height: 12rem;
+}
+
+#valText {
+    margin-top: 1.5rem;
+}
+
+#nvaMidPage ul {
+     display: flex;
+  flex-direction: column;
+
+    /* display: grid; */
+    gap: 1.5rem;
+    align-items: stretch;
+    list-style-type: none;
+
+    @media (min-width: 640px) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+#nvaMidPage ul li {
+    width: 100%;
+    height: 100%;
+}
+
+#midpageFullstack {
+    display: block;
+
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    border-left-width: 4px;
+    border-color: #2563EB;
+    width: 100%;
+    height: 100%;
+    font-weight: 600;
+    color: #1E3A8A;
+    background-image: linear-gradient(to bottom right, #1E3A8A, white);
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+    transition-duration: 200ms;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+
+
+    /* :hover {
+        background-color: #DBEAFE;
+        --transform-scale-x: 1.05;
+        --transform-scale-y: 1.05;
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    } */
+
+}
+
+#midpageFullstack span {
+    margin-bottom: 0.75rem;
+}
+
+#midpageProjekt {
+    display: block;
+
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    border-left-width: 4px;
+    border-color: #059669;
+    width: 100%;
+    height: 100%;
+    font-weight: 600;
+    color: #064E3B;
+    background-image: linear-gradient(to bottom right, #064E3B, white);
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+    transition-duration: 200ms;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+
+
+    /* :hover {
+        background-color: #D1FAE5;
+        --transform-scale-x: 1.05;
+        --transform-scale-y: 1.05;
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    } */
+}
+
+#midpageProjekt span {
+    margin-bottom: 0.75rem;
+}
+
+#midpageSkribent {
+     display: block;
+
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    border-left-width: 4px;
+    border-color: #DB2777;
+    width: 100%;
+    height: 100%;
+    font-weight: 600;
+    color: #831843;
+    background-image: linear-gradient(to bottom right, #831843, white);
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+    transition-duration: 200ms;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+
+
+    /* :hover {
+        background-color: #FCE7F3;
+        --transform-scale-x: 1.05;
+        --transform-scale-y: 1.05;
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    } */
+}
+
+#midpageSkribent span {
+    margin-bottom: 0.75rem;
+}
+
+#midpageKonstLedare {
+    display: block;
+ 
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    border-left-width: 4px;
+    border-color: #F59E0B;
+    width: 100%;
+    height: 100%;
+    font-weight: 600;
+    color: #78350F;
+    background-image: linear-gradient(to bottom right, #F59E0B, white);
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+    transition-duration: 200ms;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+
+
+    /* :hover {
+ background-color: #FEF3C7; 
+--transform-scale-x: 1.05;
+--transform-scale-y: 1.05; 
+box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); 
+ } */
+
+}
+
+#midpageKonstLedare span {
+    margin-bottom: 0.75rem;
+}
+
+#kuriosaSection {
+    margin-bottom: 2rem;
+
+    >h2 {
+        margin-bottom: 0.5rem;
+        margin-top: 1.5rem;
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        font-weight: 600;
+    }
+
+    >ul {
+        padding-left: 1.5rem;
+        list-style-type: disc;
+    }
+}

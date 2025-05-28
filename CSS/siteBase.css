@@ -1,0 +1,166 @@
+.topRubrik {
+    display: flex;
+    flex-direction: column;
+
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+.topRubrik p {
+    margin-bottom: 0.5rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+h1 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+}
+
+a :hover {
+    text-decoration: underline;
+}
+
+nav {
+    display: flex;
+    margin-top: 0.5rem;
+    flex-direction: column;
+    gap: 1rem;
+
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+    }
+
+}
+
+.navFullstack {
+    padding: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    margin-right: 1rem;
+    flex-basis: 33.333333%;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    color: #1E3A8A;
+    text-decoration: underline;
+    background-image: linear-gradient(to bottom right, #1E3A8A, white);
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+
+    :hover {
+        color: #60A5FA;
+    }
+}
+
+.navProjektledare {
+    padding: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    margin-right: 1rem;
+    flex-basis: 33.333333%;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    color: #064E3B;
+    background-image: linear-gradient(to bottom right, #064E3B, white);
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+
+    :hover {
+        color: #059669;
+    }
+}
+
+.navSkribent {
+    padding: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    margin-right: 1rem;
+    flex-basis: 33.333333%;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    color: #DB2777;
+    text-decoration: underline;
+    background-image: linear-gradient(to bottom right, #DB2777, white);
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+
+    :hover {
+        color: #DB2777;
+    }
+}
+
+.navKonstLedare {
+    padding: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    margin-right: 1rem;
+    flex-basis: 33.333333%;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    color: rgb(234 88 12);
+    text-decoration: underline;
+    background-image: linear-gradient(to bottom right, rgb(234 88 12), white);
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+
+    :hover {
+        color: rgb(234 88 12);
+    }
+}
+
+.kontakt {
+    margin-top: 1.5rem;
+
+
+    @media (min-width: 768px) {
+        margin-top: 0;
+        margin-left: 2rem;
+    }
+}
+
+#kontakt-heading {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+}
+
+#epost {
+    text-decoration: underline;
+
+    :hover {
+        color: #A7F3D0;
+    }
+}
+
+#tel {
+    text-decoration: underline;
+
+    :hover {
+        color: #A7F3D0;
+    }
+}
+
+#linkedin {
+    text-decoration: underline;
+
+    :hover {
+        color: #A7F3D0;
+    }
+}
