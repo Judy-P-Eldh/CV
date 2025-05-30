@@ -61,13 +61,10 @@ main {
     margin-top: 1.5rem;
 }
 
-#nvaMidPage ul {
-     display: flex;
-  flex-direction: column;
-
-    /* display: grid; */
+#nvaMidPage {
+    display: flex;
+    flex-direction: column;
     gap: 1.5rem;
-    align-items: stretch;
     list-style-type: none;
 
     @media (min-width: 640px) {
@@ -75,14 +72,14 @@ main {
     }
 }
 
-#nvaMidPage ul li {
-    width: 100%;
+#nvaMidPage li {
+    width: 80%;
     height: 100%;
+      
 }
 
 #midpageFullstack {
     display: block;
-
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     padding-top: 2rem;
@@ -90,18 +87,17 @@ main {
     justify-content: center;
     align-items: center;
     border-radius: 1rem;
-    border-left-width: 4px;
-    border-color: #2563EB;
+    border-left: 4px solid #2563EB;
     width: 100%;
     height: 100%;
     font-weight: 600;
     color: #1E3A8A;
-    background-image: linear-gradient(to bottom right, #1E3A8A, white);
+    background-image: linear-gradient(to bottom right, white, #1E3A8A);
     transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 300ms;
     transition-duration: 200ms;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 
 
     /* :hover {
@@ -127,18 +123,17 @@ main {
     justify-content: center;
     align-items: center;
     border-radius: 1rem;
-    border-left-width: 4px;
-    border-color: #059669;
+    border-left: 4px solid #059669;
     width: 100%;
     height: 100%;
     font-weight: 600;
     color: #064E3B;
-    background-image: linear-gradient(to bottom right, #064E3B, white);
+    background-image: linear-gradient(to bottom right,  white, #064E3B);
     transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 300ms;
     transition-duration: 200ms;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 
 
     /* :hover {
@@ -154,7 +149,7 @@ main {
 }
 
 #midpageSkribent {
-     display: block;
+    display: block;
 
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -163,13 +158,12 @@ main {
     justify-content: center;
     align-items: center;
     border-radius: 1rem;
-    border-left-width: 4px;
-    border-color: #DB2777;
+    border-left:4px solid #DB2777;
     width: 100%;
     height: 100%;
     font-weight: 600;
     color: #831843;
-    background-image: linear-gradient(to bottom right, #831843, white);
+    background-image: linear-gradient(to bottom right,  white, #831843);
     transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 300ms;
@@ -191,21 +185,22 @@ main {
 
 #midpageKonstLedare {
     display: block;
- 
+
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
     justify-content: center;
     align-items: center;
-    border-radius: 1rem;
+    
     border-left-width: 4px;
-    border-color: #F59E0B;
+    border-left: 4px solid #F59E0B;
+    border-radius: 1rem;
     width: 100%;
     height: 100%;
     font-weight: 600;
     color: #78350F;
-    background-image: linear-gradient(to bottom right, #F59E0B, white);
+    background-image: linear-gradient(to bottom right, white, #F59E0B);
     transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 300ms;
