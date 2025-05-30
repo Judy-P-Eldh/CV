@@ -61,7 +61,7 @@ nav button {
     border-radius: 0.25rem;
     font-weight: 600;
     text-decoration: underline;
-    background-image: linear-gradient(to bottom right, white 30%, #1c294e 70%);
+    background-image: linear-gradient(to bottom right, white 20%, #1c294e 90%);
     transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 300ms;
@@ -88,7 +88,7 @@ nav button {
     flex-basis: 33.333333%;
     border-radius: 0.25rem;
     font-weight: 600;
-    background-image: linear-gradient(to bottom right, white 30%, #064E3B 70%);
+    background-image: linear-gradient(to bottom right, white 20%, #064E3B 90%);
     transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 300ms;
@@ -115,7 +115,7 @@ nav button {
     border-radius: 0.25rem;
     font-weight: 600;
     text-decoration: underline;
-    background-image: linear-gradient(to bottom right, white 30%, #DB2777 70%);
+    background-image: linear-gradient(to bottom right, white 20%, #DB2777 90%);
     transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 300ms;
@@ -142,7 +142,7 @@ nav button {
     border-radius: 0.25rem;
     font-weight: 600;
     text-decoration: underline;
-    background-image: linear-gradient(to bottom right, white 30%, #F59E0B 70%);
+    background-image: linear-gradient(to bottom right, white 20%, #F59E0B 90%);
     transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 300ms;
