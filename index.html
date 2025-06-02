@@ -6,85 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Pernilla Eldhs samlade CV:n på svenska.">
     <title>CV | Pernilla Eldh</title>
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <!-- <link rel="stylesheet" href="/CSS/print.css" media="print">
-    <link href="CSS/output.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="CSS/siteBase.css">
-    <link rel="stylesheet" href="CSS/siteIndex.css">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- <link rel="stylesheet" href="CSS/siteIndex.css"> -->
 </head>
 
 <body>
 
     <!-- Gemensam header -->
     <header>
-        <div class="topRubrik">
-            <div>
-                <h1>
-                    <a href="index.html">Pernilla Eldh</a>
-                </h1>
-                <p>CV</p>
-                <nav aria-label="CV-navigation">
-                        <button class="navFullstack">
-                            <a href="fullstack.html">Fullstackutvecklare</a>
-                        </button>
-                        <button class="navProjektledare">
-                            <a href="projektledare-vr.html">Projektledare
-                                & VR-producent</a>
-                        </button>
-                        <button class="navSkribent">
-                            <a href="skribent-webbredaktor.html">Skribent & Webbredaktör</a>
-                        </button>
-                        <button class="navKonstLedare">
-                            <a href="konstnarlig-ledare.html">Konstnärlig ledare & Danspedagog</a>
-                        </button>
-                </nav>
-            </div>
-            <section class="kontakt mt-6 md:mt-0 md:ml-8" aria-labelledby="kontakt-heading">
-                <h2 id="kontakt-heading" class="text-xl font-semibold mb-2">Kontakt</h2>
-                <ul>
-                    <li>E-post: <a href="mailto:pernilla.eldh@gmail.com" id="epost"
-                            class="underline hover:text-green-200">pernilla.eldh@gmail.com</a></li>
-                    <li>Tel: <a href="phone:0706850792" target="_blank" rel="noopener" id="tel"
-                            class="underline hover:text-green-200">0706850792</a></li>
-                    <li>LinkedIn: <a href="https://www.linkedin.com/in/pernilla-eldh/" target="_blank" rel="noopener"
-                            id="linkedin" class="underline hover:text-pink-200">linkedin.com/in/pernilla-eldh</a></li>
-                    <li>Bosatt i Stockholm</li>
-                </ul>
-            </section>
-        </div>
+        <section class="toppRubrik">
+            <h1><a href="index.html">Pernilla Eldh</a> </h1>
+            <p>CV</p>
+        </section>
+
+        <section class="kontakt" aria-labelledby="kontakt-heading">
+            <h2 id="kontakt-heading">Kontakt</h2>
+            <ul>
+                <li>E-post: <a href="mailto:pernilla.eldh@gmail.com" id="epost"
+                        class="underline hover:text-green-200">pernilla.eldh@gmail.com</a></li>
+                <li>Tel: <a href="phone:0706850792" target="_blank" rel="noopener" id="tel"
+                        class="underline hover:text-green-200">0706850792</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/pernilla-eldh/" target="_blank" rel="noopener"
+                        id="linkedin" class="underline hover:text-pink-200">linkedin.com/in/pernilla-eldh</a></li>
+                <li>- Bosatt i Stockholm</li>
+            </ul>
+        </section>
+
+        <nav aria-label="CV-navigation">
+            <ul class="navMain">
+                <li class="navFullstack">
+                    <a href="fullstack.html">Fullstackutvecklare</a>
+                </li>
+                <li class="navProjektledare">
+                    <a href="projektledare-vr.html">Projektledare
+                        & VR-producent</a>
+                </li>
+                <li class="navSkribent">
+                    <a href="skribent-webbredaktor.html">Skribent & Webbredaktör</a>
+                </li>
+                <li class="navKonstLedare">
+                    <a href="konstnarlig-ledare.html">Konstnärlig ledare & Danspedagog</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section id="intro" class="mb-8">
-            <h1 id="introRubrik">Välkommen till min CV-sida</h1>
-            <div id="introContainer" class="flex items-center">
-                <div id="introText" class="mr-6">
-                    <p class="text-lg mb-2">
+        <section id="intro">
+            <h3 id="introRubrik">Välkommen till min CV-sida</h3>
+            <div id="introContainer">
+                <div id="introText">
+                    <p>
                         Jag har lång erfarenhet av både IT-utveckling och konstnärligt ledarskap. Jag är van vid att
                         arbeta
                         i tvärfunktionella team, driva projekt från idé till färdig produkt och skapa kreativa lösningar
                         inom
                         både teknik och kultur.
                     </p>
-                    <p class="mb-2">
+                    <p>
                         Under min karriär har jag arbetat som fullstackutvecklare, projektledare, VR-producent, skribent
                         och
                         danspedagog. Genom åren har jag drivit egna projekt, lett team, utvecklat digitala lösningar och
                         producerat scenkonst.
                     </p>
+                    <p>Här kan du välja det CV som intresserar dig mest:</p>
                 </div>
-                <img src="Pictures/PernillaEldh.JPG" alt="Pernilla Eldh" id="introBild"
-                    class="w-48 h-48 object-cover rounded-lg">
+                <img src="Pictures/PernillaEldh.JPG" alt="Pernilla Eldh" id="introBild">
             </div>
-            <p id="valText" class="mt-6">Här kan du välja det CV som intresserar dig mest:</p>
+
         </section>
 
         <!-- <nav id="nvaMidPage"> -->
-        <ul id="nvaMidPage" class="grid gap-6 sm:grid-cols-2 items-stretch">
+        <ul id="nvaMidPage">
             <!-- Fullstackutvecklare -->
             <li>
                 <a href="fullstack.html" id="midpageFullstack">
-                    <span class="mb-3">
+                    <span>
                         <!-- Kod-ikon -->
                         <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -98,9 +96,9 @@
                 </a>
             </li>
             <!-- Projektledare & VR-producent -->
-            <li class="h-full w-full">
+            <li>
                 <a href="projektledare-vr.html" id="midpageProjekt">
-                    <span class="mb-3">
+                    <span>
                         <!-- Projekt-ikon -->
                         <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -119,9 +117,9 @@
                 </a>
             </li>
             <!-- Skribent & Webbredaktör -->
-            <li class="h-full w-full">
+            <li>
                 <a href="skribent-webbredaktor.html" id="midpageSkribent">
-                    <span class="mb-3">
+                    <span>
                         <!-- Penna-ikon -->
                         <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -135,9 +133,9 @@
                 </a>
             </li>
             <!-- Konstnärlig ledare & Danspedagog -->
-            <li class="h-full w-full">
+            <li>
                 <a href="konstnarlig-ledare.html" id="midpageKonstLedare">
-                    <span class="mb-3">
+                    <span>
                         <!-- Stjärna-ikon -->
                         <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -155,12 +153,12 @@
 
         <section id="kuriosaSection">
         </section>
-            <h2 class="text-xl font-semibold mb-2 mt-6">Kuriosa</h2>
-            <ul class="list-disc pl-6">
-                <li>Jag tycker om att köra bil</li>
-                <li>Jag äter gärna fisk</li>
-                <li>Jag dricker väldigt mycket te</li>
-            </ul>
+        <h3>Kuriosa</h3>
+        <ul>
+            <li>Jag tycker om att köra bil</li>
+            <li>Jag äter gärna fisk</li>
+            <li>Jag dricker väldigt mycket te</li>
+        </ul>
         </section>
     </main>
 </body>

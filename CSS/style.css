@@ -1,0 +1,232 @@
+:root {
+    --no-list-style: none;
+    --button-radius: 0.4rem;
+    --box-scale: (1.05, 1.05);
+    --clr-blue: #1c294e;
+    --clr-green: #064E3B;
+    --clr-pink: #DB2777;
+    --clr-yellow: #F59E0B;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: #111827;
+    background-color: #F3F4F6;
+}
+
+header {
+    box-sizing: border-box;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 1rem 2rem;
+    margin-bottom: 2.5rem;
+    border-bottom-right-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+    color: #ffffff;
+    background-color: var(--clr-blue);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.toppRubrik p {
+    margin: 1rem 0;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+.kontakt {
+    margin: 1rem 0;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+.kontakt li {
+    list-style: var(--no-list-style);
+}
+
+.kontakt ul li :hover {
+    color: var(--clr-pink);
+}
+
+.kontakt ul li a {
+    color: white;
+    text-decoration: underline;
+}
+
+#kontakt-heading {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+}
+
+nav {
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    >ul {
+        display: flex;
+        gap: 1.5rem;
+        list-style: var(--no-list-style);
+
+        :hover {
+            text-decoration: none;
+            color: var(--clr-pink);
+        }
+    }
+}
+
+nav a {
+    width: 9rem;
+    height: 3rem;
+    display: block;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+    padding: 1rem 1rem;
+    border-radius: var(--button-radius);
+    font-weight: 500;
+    background-color: white;
+    color: var(--clr-blue);
+}
+
+h1 {
+    color: white;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+
+    >a {
+        color: white;
+    }
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+main {
+    margin: auto;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    max-width: 42rem;
+    background-color: #ffffff;
+    /* box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); */
+}
+
+#intro {
+    margin-bottom: 2rem;
+}
+
+#introRubrik {
+    margin-bottom: 0.75rem;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+    color: #1E3A8A;
+}
+
+#introContainer {
+    display: flex;
+    align-items: center;
+}
+
+#introText {
+    margin-right: 1.5rem;
+
+    >p {
+        margin-bottom: 0.5rem;
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+    }
+}
+
+#introBild {
+    object-fit: cover;
+    border-radius: 0.5rem;
+    width: 12rem;
+    height: 12rem;
+}
+
+
+/* Grid-layout för ul */
+#nvaMidPage {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* En kolumn som standard (mobil) */
+    gap: 1.5rem;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Två kolumner på större skärmar */
+@media (min-width: 640px) {
+    #nvaMidPage {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Listobjekten fyller cellen */
+#nvaMidPage li {
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    align-items: stretch;
+    /* Fyller hela gridcellen */
+
+    :hover {
+        transform: scale(1.05, 1.05);
+    }
+}
+
+/* Länken fyller hela li */
+#nvaMidPage li a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+
+    >span {
+        margin-bottom: 1rem;
+    }
+
+}
+
+#midpageFullstack {
+    color: var(--clr-blue);
+    background-image: linear-gradient(to bottom right, white 20%, var(--clr-blue) 90%);
+}
+
+#midpageProjekt {
+    color: var(--clr-green);
+    background-image: linear-gradient(to bottom right, white 20%, var(--clr-green) 90%);
+}
+
+#midpageSkribent {
+    color: var(--clr-pink);
+    background-image: linear-gradient(to bottom right, white 20%, var(--clr-pink) 90%);
+}
+
+#midpageKonstLedare {
+    color: var(--clr-yellow);
+    background-image: linear-gradient(to bottom right, white 20%, var(--clr-yellow) 90%);
+}
+
+#kuriosaSection {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+
+    >ul {
+        padding-left: 1.5rem;
+        list-style-type: disc;
+    }
+}

@@ -89,6 +89,10 @@ main {
     display: flex;
     align-items: stretch;
     /* Fyller hela gridcellen */
+
+    :hover {
+        transform: scale(1.05, 1.05);
+    }
 }
 
 /* Länken fyller hela li */
@@ -99,7 +103,6 @@ main {
     align-items: center;
     width: 100%;
     height: 100%;
-
     border-radius: 1rem;
     font-weight: 600;
     text-decoration: none;
