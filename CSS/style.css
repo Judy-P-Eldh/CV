@@ -6,6 +6,11 @@
     --clr-green: #064E3B;
     --clr-pink: #DB2777;
     --clr-yellow: #F59E0B;
+
+    --font-size-m: 1.1rem;
+    --font-size-lg: 1.7rem;
+
+    --line-height: 1.55rem;
 }
 
 body {
@@ -17,8 +22,6 @@ body {
 header {
     box-sizing: border-box;
     width: 100%;
-    display: grid;
-    grid-template-columns: auto auto;
     padding: 1rem 2rem;
     margin-bottom: 2.5rem;
     border-bottom-right-radius: 1.5rem;
@@ -28,16 +31,28 @@ header {
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
+hr {
+    margin: 3rem;
+    color: rgba(255, 255, 255, 0.226);
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 40px;
+}
+
 .toppRubrik p {
     margin: 1rem 0;
-    font-size: 1.125rem;
-    line-height: 1.75rem;
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height);
 }
 
 .kontakt {
-    margin: 1rem 0;
-    font-size: 1.125rem;
-    line-height: 1.75rem;
+    /* border: 0.5px solid white;
+    padding: 1rem; */
+    line-height:  var(--line-height);
 }
 
 .kontakt li {
@@ -55,15 +70,16 @@ header {
 
 #kontakt-heading {
     margin-bottom: 0.5rem;
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+    font-size: var(--font-size-m);
+    line-height:  var(--line-height);
     font-weight: 600;
 }
 
 nav {
-    margin-top: 1rem;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+   margin: 2rem 2rem;
 
     >ul {
         display: flex;
@@ -78,6 +94,7 @@ nav {
 }
 
 nav a {
+    text-align: center;
     width: 9rem;
     height: 3rem;
     display: block;
@@ -89,6 +106,35 @@ nav a {
     background-color: white;
     color: var(--clr-blue);
 }
+
+@media (max-width: 600px) {
+  .header-top {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2rem;
+  }
+
+  .navMain {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .navMain li {
+    text-align: center;
+    width: 100%;
+  }
+
+  .navMain a {
+    display: block;
+    width: 90%;
+    height: 2rem;
+    
+  } 
+}
+
 
 h1 {
     color: white;
@@ -107,6 +153,12 @@ h2 {
     margin-bottom: 0.5rem;
 }
 
+h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
 main {
     margin: auto;
     padding: 2rem;
@@ -116,40 +168,35 @@ main {
     /* box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); */
 }
 
-#intro {
-    margin-bottom: 2rem;
-}
-
-#introRubrik {
-    margin-bottom: 0.75rem;
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-    font-weight: 700;
-    color: #1E3A8A;
-}
-
-#introContainer {
+.intro {
     display: flex;
-    align-items: center;
-}
+    flex-direction: column;
+    margin-bottom: 2rem;
 
-#introText {
-    margin-right: 1.5rem;
+    h3 {
+        margin-bottom: 0.75rem;
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+        font-weight: 700;
+        color: var(--clr-blue);
+    }
 
-    >p {
+    img {
+
+        object-fit: cover;
+        border-radius: 0.5rem;
+        width: 12rem;
+        height: 12rem;
+        margin: 1rem;
+    }
+
+    p {
+
         margin-bottom: 0.5rem;
         font-size: 1.125rem;
         line-height: 1.75rem;
     }
 }
-
-#introBild {
-    object-fit: cover;
-    border-radius: 0.5rem;
-    width: 12rem;
-    height: 12rem;
-}
-
 
 /* Grid-layout för ul */
 #nvaMidPage {
@@ -198,27 +245,26 @@ main {
     >span {
         margin-bottom: 1rem;
     }
-
 }
 
 #midpageFullstack {
     color: var(--clr-blue);
-    background-image: linear-gradient(to bottom right, white 20%, var(--clr-blue) 90%);
+    background-image: linear-gradient(to bottom right, white 20%, var(--clr-blue) 150%);
 }
 
 #midpageProjekt {
     color: var(--clr-green);
-    background-image: linear-gradient(to bottom right, white 20%, var(--clr-green) 90%);
+    background-image: linear-gradient(to bottom right, white 20%, var(--clr-green) 150%);
 }
 
 #midpageSkribent {
     color: var(--clr-pink);
-    background-image: linear-gradient(to bottom right, white 20%, var(--clr-pink) 90%);
+    background-image: linear-gradient(to bottom right, white 20%, var(--clr-pink) 150%);
 }
 
 #midpageKonstLedare {
     color: var(--clr-yellow);
-    background-image: linear-gradient(to bottom right, white 20%, var(--clr-yellow) 90%);
+    background-image: linear-gradient(to bottom right, white 20%, var(--clr-yellow) 150%);
 }
 
 #kuriosaSection {
