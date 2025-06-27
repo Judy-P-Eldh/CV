@@ -4,30 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Konstnärlig ledare</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <style>
-    @media print {
-      .no-print { display: none !important; }
-      body { background: white; }
-    }
-  </style>
+   <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
-<body class="bg-gray-100 text-gray-900">
-  <!-- Gemensam header -->
-  <header class="bg-blue-900 text-white p-6 mb-8 print:mb-4">
-    <h1 class="text-3xl font-bold">Pernilla Eldh</h1>
-    <p class="text-lg">Konstnärlig ledare – Danslärare, Projektledare & Producent</p>
-    <nav class="mt-4 no-print" aria-label="CV-navigation">
-                    <a href="index.html" class="mr-4 underline hover:text-blue-200">Till startsidan</a>
-                    <a href="fullstack.html" class="mr-4 underline hover:text-blue-200">Fullstackutvecklare</a>
-                    <a href="projektledare-vr.html" class="mr-4 underline hover:text-blue-200">Projektledare &
-                        VR-producent</a>
-                    <a href="skribent-webbredaktor.html" class="mr-4 underline hover:text-blue-200">Skribent &
-                        Webbredaktör</a>
-                    <a href="konstnarlig-ledare.html" class="underline hover:text-blue-200">Konstnärlig ledare &
-                        Danspedagog</a>
-                </nav>
-  </header>
+<body>
+   <!-- Gemensam header -->
+    <header>
+        <section class="header-top">
+            <div class="toppRubrik">
+                <h1><a href="index.html">Pernilla Eldh</a> </h1>
+                <p>CV</p>
+            </div>
+
+            <section class="kontakt" aria-labelledby="kontakt-heading">
+                <p id="kontakt-heading">Kontakt</p>
+                <ul>
+                    <li>E-post: <a href="mailto:pernilla.eldh@gmail.com" id="epost"
+                            class="underline hover:text-green-200">pernilla.eldh@gmail.com</a></li>
+                    <li>Tel: <a href="phone:0706850792" target="_blank" rel="noopener" id="tel"
+                            class="underline hover:text-green-200">0706850792</a></li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/pernilla-eldh/" target="_blank" rel="noopener"
+                            id="linkedin" class="underline hover:text-pink-200">linkedin.com/in/pernilla-eldh</a></li>
+                    <li>- Bosatt i Stockholm</li>
+                </ul>
+            </section>
+        </section>
+
+        <hr>
+
+        <nav aria-label="CV-navigation">
+            <ul class="navMain">
+                <li class="navFullstack">
+                    <a href="fullstack.html">Fullstackutvecklare</a>
+                </li>
+                <li class="navProjektledare">
+                    <a href="projektledare-vr.html">Projektledare
+                        & VR-producent</a>
+                </li>
+                <li class="navSkribent">
+                    <a href="skribent-webbredaktor.html">Skribent & Webbredaktör</a>
+                </li>
+                <li class="navKonstLedare">
+                    <a href="konstnarlig-ledare.html">Konstnärlig ledare & Danspedagog</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
   <!-- CV-innehåll -->
   <main class="max-w-3xl mx-auto bg-white shadow-md rounded-lg p-8 mb-8">
