@@ -6,8 +6,12 @@
     --clr-blue: #1c294e;
     --clr-green: #064E3B;
     --clr-pink: #DB2777;
+    --clr-pink-dark: #a0205a;
     --clr-yellow: #F59E0B;
+    --clr-yellow-dark: #dd8e05;
     --clr-white: white;
+    --clr-grey-light: rgb(216, 216, 216);
+    --clr-grey-dark: rgb(85, 85, 85);
 
     --ff-primary: sans-serif;
     --ff-secondary: serif;
@@ -154,7 +158,7 @@ nav {
 
         :hover {
             text-decoration: none;
-            color: var(--clr-pink);
+            color: var(--clr-pink-dark);
         }
     }
 
@@ -168,6 +172,11 @@ nav {
         font-weight: var(--fw-semibold);
         background-color: var(--clr-white);
         color: var(--clr-blue);
+    }
+
+    .active {
+        background-color: var(--clr-grey-dark);
+        color: var(--clr-white);
     }
 }
 
@@ -224,7 +233,7 @@ main {
     }
 
     p {
-       text-align: center;
+        text-align: center;
         margin-bottom: var(--m-small);
         font-size: var(--fs-normal);
         line-height: var(--lh-normal);
@@ -241,7 +250,7 @@ main {
 
     /* Listobjekten fyller cellen */
     li {
-        margin-inline:auto;
+        margin-inline: auto;
         width: 100%;
         min-height: 200px;
         display: flex;
@@ -310,10 +319,56 @@ main {
     font-size: var(--fs-small);
 }
 
+.developer {
+    background-image: var(--gradient-blue);
+}
+
+.projectlead {
+    background-image: var(--graidient-green);
+
+    >header {
+        background-color: var(--clr-green);
+    }
+}
+
+.writer {
+    background-image: var(--gradient-pink);
+
+    >header {
+        background-color: var(--clr-pink-dark);
+
+        .header-top a,
+        .kontakt a {
+            &:hover {
+                color: var(--clr-grey-light);
+            }
+        }
+    }
+}
+
+.dance {
+    background-image: var(--gradient-yellow);
+
+    >header {
+        background-color: var(--clr-yellow-dark);
+        color: black;
+
+        .header-top a,
+        .kontakt a {
+            color: black;
+
+            &:hover {
+                color: white;
+            }
+        }
+    }
+}
+
 .projects {
     li {
         margin-block-end: var(--m-normal);
     }
+
     a:hover {
         color: var(--clr-pink);
     }
@@ -330,9 +385,3 @@ main {
         color: white;
     }
 }
-
-/* @media print {
-  .no-print {
-    visibility: hidden;
-  }
-} */
