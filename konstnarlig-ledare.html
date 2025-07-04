@@ -5,111 +5,131 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV – Konstnärlig ledare & Danspedagog | Pernilla Eldh</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="/CSS/output.css" rel="stylesheet">
-  <link rel="stylesheet" href="/CSS/print.css" media="print">
+  <link rel="stylesheet" href="CSS/reset.css">
+  <link rel="stylesheet" href="CSS/style.css">
 </head>
 
-<body class="bg-gradient-to-br from-yellow-50 via-white to-yellow-100">
-  <header class="bg-yellow-500 text-white p-6 mb-8">
-    <div class="flex flex-col md:flex-row md:justify-between md:items-start">
-      <div>
-        <h1 class="text-3xl font-bold">
-          <a href="index.html" class="hover:underline">Pernilla Eldh</a>
-        </h1>
-
-        <p class="text-lg">Konstnärlig ledare & Danspedagog</p>
-        <nav class="mt-2 no-print flex flex-col md:flex-row gap-4 p-4" aria-label="CV-navigation">
-                    <a href="fullstack.html"
-                        class="basis-1/3 grow p-4 px-1 py-1 rounded bg-gradient-to-br from-blue-50 via-white to-blue-100 text-blue-900 font-semibold mr-4 underline hover:text-blue-400 transition">Fullstackutvecklare</a>
-                    <a href="projektledare-vr.html" 
-                        class=" basis-1/3 grow p-4 mr-4 hover:text-green-600 px-1 py-1 rounded bg-gradient-to-br from-green-50 via-white to-green-100 text-green-900 font-semibold transition">Projektledare
-                        & VR-producent</a>
-                    <a href="skribent-webbredaktor.html" 
-                        class=" basis-1/3 grow p-4 mr-4 underline hover:text-pink-400px-1 py-1 rounded bg-gradient-to-br from-pink-50 via-white to-pink-100 text-pink-600 font-semibold transition">Skribent
-                        & Webbredaktör</a>
-                    <a href="konstnarlig-ledare.html" 
-                        class=" basis-1/3 grow p-4 mr-4 underline hover:text-orange-600 px-1 py-1 rounded bg-gradient-to-br from-yellow-50 via-white to-yellow-100 text-orange-400 font-semibold transition">Konstnärlig
-                        ledare & Danspedagog</a>
-                </nav>
+<body class="dance">
+  <!-- Gemensam header -->
+  <header>
+    <section class="header-top">
+      <div class="toppRubrik">
+        <h1><a href="index.html">Pernilla Eldh</a> </h1>
+        <p>CV</p>
       </div>
-      <section class="mt-6 md:mt-0 md:ml-8" aria-labelledby="kontakt-heading">
-        <h2 id="kontakt-heading" class="text-xl font-semibold mb-2">Kontakt</h2>
+
+      <section class="kontakt" aria-labelledby="kontakt-heading">
+        <p id="kontakt-heading">Kontakt</p>
         <ul>
-          <li>E-post: <a href="mailto:pernilla.eldh@gmail.com"
+          <li>E-post: <a href="mailto:pernilla.eldh@gmail.com" id="epost"
               class="underline hover:text-green-200">pernilla.eldh@gmail.com</a></li>
-          <li>Tel: <a href="phone:0706850792" target="_blank" rel="noopener"
+          <li>Tel: <a href="phone:0706850792" target="_blank" rel="noopener" id="tel"
               class="underline hover:text-green-200">0706850792</a></li>
           <li>LinkedIn: <a href="https://www.linkedin.com/in/pernilla-eldh/" target="_blank" rel="noopener"
-              class="underline hover:text-pink-200">linkedin.com/in/pernilla-eldh</a></li>
+              id="linkedin" class="underline hover:text-pink-200">linkedin.com/in/pernilla-eldh</a></li>
+          <li>- Bosatt i Stockholm</li>
         </ul>
       </section>
-    </div>
+    </section>
+
+    <hr>
+
+    <nav aria-label="CV-navigation">
+      <ul class="navMain">
+        <li class="navFullstack">
+          <a href="fullstack.html">Fullstackutvecklare</a>
+        </li>
+        <li class="navProjektledare">
+          <a href="projektledare-vr.html">Projektledare
+            & VR-producent</a>
+        </li>
+        <li class="navSkribent">
+          <a href="skribent-webbredaktor.html">Skribent & Webbredaktör</a>
+        </li>
+        <li class="navKonstLedare">
+          <a class="active" href="konstnarlig-ledare.html">Konstnärlig ledare & Danspedagog</a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
-  <main class="max-w-3xl mx-auto rounded-lg p-8 mb-8">
-    <section class="mb-6">
+  <main>
+    <section class="intro">
       <h2 class="text-xl font-semibold mb-2">Profil</h2>
       <p>
-        Engagerad och erfaren danslärare och konstnärlig ledare med ca 20 års erfarenhet av att undervisa barn, ungdomar
-        och vuxna inom flera dansstilar
-        och sceniska projekt. Jag har drivit och utvecklat kursverksamhet, planerat och genomfört produktioner samt
-        ansvarat för rekrytering, koreografi,
-        sceniskt arbete och kommunikation med elever, kollegor och externa parter. Med en stark pedagogisk förmåga,
-        tydlig och effektiv kommunikation samt
-        erfarenhet av projektledning och verksamhetsutveckling, skapar jag inspirerande och trygga lärmiljöer där varje
-        individ ges möjlighet att utvecklas
-        och nå sin fulla potential. Jag är kreativ, strukturerad och van att leda både små och stora grupper mot
+        Erfaren konstnärlig ledare med gedigen bakgrund inom dans, koreografi och scenproduktion.
+        Brinner för att utveckla kreativa projekt, undervisa och inspirera dansare i olika åldrar samt leda produktioner
+        från idé till färdig föreställning. Van att arbeta strategiskt och operativt, med starkt fokus på samarbete,
+        kommunikation och konstnärlig kvalitet.
+      </p>
+
+      <p>Jag har drivit och utvecklat kursverksamhet, planerat och genomfört produktioner samt ansvarat för rekrytering.
+        Med en stark pedagogisk förmåga, tydlig och effektiv kommunikation skapar jag inspirerande och trygga lärmiljöer
+        där varje individ ges möjlighet att utvecklas och nå sin fulla potential.</p>
+      <p>
+        Jag är kreativ, strukturerad och van att leda både små och stora grupper mot
         gemensamma mål.
       </p>
+
     </section>
-    <section class="mb-6">
-      <h2 class="text-xl font-semibold mb-2">Kärnkompetenser</h2>
-      <ul class="list-disc pl-6">
-        <li>Konstnärligt ledarskap och produktion</li>
-        <li>Dansundervisning </br>Stilar:Locking, Popping, House, Hip Hop/Streetdance, Jazzdans</li>
-        <li>Projektledning och kursutformning</li>
+    <hr>
+
+    <section>
+      <h2>Kärnkompetenser</h2>
+      <ul>
+        <li>Projektledning och produktion av dansföreställningar</li>
+        <li>Budgetering och resursplanering</li>
+        <li>Konstnärligt ledarskap och koreografi</li>
+        <li>Teamledning och mentorskap</li>
+        <li>Dansundervisning </br>Stilar:Locking, Popping, House, Hip Hop/Streetdance, Balett, Jazzdans</li>
+        <li>Planering och genomförande av workshops, kurser och evenemang</li>
         <li>Föreställningsproduktion och verksamhetsutveckling</li>
-        <li>Samarbete och kommunikation</li>
+        <li>Samarbete med koreografer, dansare och kreativa team</li>
+        <li>Kommunikation med publik, föräldrar och samarbetspartners</li>
       </ul>
     </section>
-    <section class="mb-6">
-      <h2 class="text-xl font-semibold mb-2">Erfarenhet</h2>
-      <div class="mb-4">
-        <strong>Danspedagog & Projektledare</strong>, Stockholm/Södermanland, 1998–2022<br>
-        <ul class="list-disc pl-6">
+
+    <section>
+      <h2>Erfarenhet</h2>
+      <div>
+        <h3>Danspedagog & Projektledare, Stockholm/Södermanland, 1998–2022</h3>
+        <ul>
           <li>Konstnärlig ledare och danspedagog för ungdomar och vuxna.</li>
           <li>Drivit projekt från start till mål, utformat kurser och producerat föreställningar.</li>
           <li>Verksamhetsutveckling och samarbete med andra aktörer.</li>
         </ul>
       </div>
     </section>
-    <section class="mb-6">
-      <h2 class="text-xl font-semibold mb-2">Utbildning</h2>
-      <ul class="list-disc pl-6">
+
+    <section>
+      <h2>Utbildning</h2>
+      <ul>
         <li>Danshögskolan 2005-2006</li>
-        <li>Div. dansskolor, Paris 2000</li>
+        <li>Div. dansskolor, Paris 2000-2006</li>
         <li>Balettakademien, Stockholm 1995-1996 + 1999-2000</li>
         <li>Performing Arts School, Göteborg 1998-1999</li>
       </ul>
     </section>
-    <section class="mb-6">
-      <h2 class="text-xl font-semibold mb-2">Övrigt</h2>
-      <ul class="list-disc pl-6">
+
+    <section>
+      <h2>Övrigt</h2>
+      <ul>
         <li>Språk: Svenska, Engelska, Franska</li>
         <li>Körkort: B</li>
-        <p>Refernser lämnas på begäran</p>
+        <li>Refernser lämnas på begäran</li>
       </ul>
     </section>
+
+    <div class="no-print print:!hidden">
+
+      <button onclick="window.print()" class="laddaNer">
+        Skriv ut som PDF
+      </button>
+      <p class="print:!hidden">OBS! För att få rätt färger och layout när du sparar sidan som PDF, välj <span
+          style="font-style: italic;">'Skriv ut
+          bakgrundsfärger och bilder'</span> i utsriftsdialogen.</p>
+    </div>
   </main>
-  <div class="text-center my-8 no-print print:!hidden">
-    <p class="print:!hidden">OBS! För att få rätt färger och layout när du sparar sidan som PDF, välj 'Skriv ut
-      bakgrundsfärger och bilder' i utsriftsdialogen.</p>
-    <button onclick="window.print()"
-      class="bg-blue-900 text-white px-6 py-2 rounded shadow hover:bg-blue-800 print:!hidden">
-      Skriv ut som PDF
-    </button>
-  </div>
 </body>
 
 </html>

@@ -1,0 +1,387 @@
+:root {
+    --no-list-style: none;
+    --button-radius: 0.4rem;
+    --box-scale: (1.05, 1.05);
+
+    --clr-blue: #1c294e;
+    --clr-green: #064E3B;
+    --clr-pink: #DB2777;
+    --clr-pink-dark: #a0205a;
+    --clr-yellow: #F59E0B;
+    --clr-yellow-dark: #dd8e05;
+    --clr-white: white;
+    --clr-grey-light: rgb(216, 216, 216);
+    --clr-grey-dark: rgb(85, 85, 85);
+
+    --ff-primary: sans-serif;
+    --ff-secondary: serif;
+
+    --fs-small: 0.875rem;
+    --fs-normal: 1rem;
+    --fs-large: 1.5rem;
+    --fs-xlarge: 1.8rem;
+
+    --fw-normal: 400;
+    --fw-semibold: 600;
+    --fw-bold: 800;
+
+    --lh-small: 1.1;
+    --lh-normal: 1.5;
+    --lh-large: 2.2rem;
+
+    --m-small: 0.5rem;
+    --m-normal: 2.5rem;
+
+    --gradient-blue: linear-gradient(to bottom right, var(--clr-white) 20%, var(--clr-blue) 150%);
+    --graidient-green: linear-gradient(to bottom right, var(--clr-white) 20%, var(--clr-green) 150%);
+    --gradient-pink: linear-gradient(to bottom right, var(--clr-white) 20%, var(--clr-pink) 150%);
+    --gradient-yellow: linear-gradient(to bottom right, var(--clr-white) 20%, var(--clr-yellow) 150%);
+
+
+
+}
+
+body {
+    font-family: var(--ff-primary);
+    line-height: var(--lh-normal);
+    /* color: #111827; */
+    color: var(--clr-blue);
+    background-color: #F3F4F6;
+}
+
+
+header {
+    container: header / inline-size;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1rem 2rem;
+    margin-bottom: var(--m-normal);
+    border-bottom-right-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+    color: var(--clr-white);
+    background-color: var(--clr-blue);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+    h1 {
+        color: var(--clr-white);
+        font-size: var(--fs-xlarge);
+        line-height: var(--lh-large);
+        font-weight: (var(--fw-bold));
+
+        >a {
+            color: var(--clr-white);
+        }
+    }
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+
+    .toppRubrik p {
+        margin: 1rem 0;
+        font-size: var(--font-size-lg);
+        line-height: var(--line-height);
+    }
+}
+
+@container header (width < 65ch) {
+    .header-top {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 2rem;
+    }
+}
+
+h2 {
+    font-size: var(--fs-large);
+    font-weight: var(--fw-semibold);
+    margin-block-start: var(--m-small);
+}
+
+h3 {
+    font-size: var(--fs-normal);
+    font-weight: var(--fw-semibold);
+    margin-block-start: var(--m-small);
+}
+
+li {
+    margin-inline-start: var(--m-normal);
+}
+
+hr {
+    margin: 3rem;
+    color: rgba(255, 255, 255, 0.226);
+}
+
+.kontakt {
+    /* border: 0.5px solid white;
+    padding: 1rem; */
+    line-height: var(--line-height);
+
+    #kontakt-heading {
+        margin-inline-start: var(--m-normal);
+        margin-block-end: var(--mb-small);
+        font-size: var(--font-size-m);
+        line-height: var(--line-height);
+        font-weight: var(--fw-semibold);
+    }
+
+    li {
+        list-style: var(--no-list-style);
+
+        a {
+            color: var(--clr-white);
+            text-decoration: underline;
+
+            &:hover {
+                color: var(--clr-pink);
+            }
+        }
+    }
+}
+
+nav {
+    container: nav / inline-size;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: var(--m-normal) var(--m-normal);
+
+    >ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        list-style: var(--no-list-style);
+
+        :hover {
+            text-decoration: none;
+            color: var(--clr-pink-dark);
+        }
+    }
+
+    a {
+        width: 70vw;
+        display: block;
+        margin-bottom: 1rem;
+        text-decoration: underline;
+        padding: 0.5rem;
+        border-radius: var(--button-radius);
+        font-weight: var(--fw-semibold);
+        background-color: var(--clr-white);
+        color: var(--clr-blue);
+    }
+
+    .active {
+        background-color: var(--clr-grey-dark);
+        color: var(--clr-white);
+    }
+}
+
+@container nav (width < 80ch) {
+    .navMain {
+        flex-direction: column;
+        gap: var(--m-small);
+        align-items: flex-start;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .navMain li {
+        width: 100%;
+    }
+
+    .navMain a {
+        display: block;
+        width: 90%;
+        height: 2rem;
+    }
+}
+
+main {
+    margin: auto;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    max-width: 48rem;
+    background-color: var(--clr-white);
+    color: var(--clr-blue);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--m-normal);
+    align-items: center;
+
+    h3 {
+        margin-bottom: var(--m-small);
+        font-size: var(--fs-xlarge);
+        line-height: var(--lh-small);
+        font-weight: var(--fw-semibold);
+        color: var(--clr-blue);
+    }
+
+    img {
+        object-fit: cover;
+        border-radius: var(--m-small);
+        width: 10rem;
+        height: 12.8rem;
+        margin: var(--m-normal);
+    }
+
+    p {
+        text-align: center;
+        margin-bottom: var(--m-small);
+        font-size: var(--fs-normal);
+        line-height: var(--lh-normal);
+    }
+}
+
+
+#nvaMidPage {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* En kolumn som standard (mobil) */
+    gap: 1.5rem;
+    list-style-type: none;
+
+    /* Listobjekten fyller cellen */
+    li {
+        margin-inline: auto;
+        width: 100%;
+        min-height: 200px;
+        display: flex;
+        align-items: stretch;
+
+        &:hover {
+            transform: scale(1.05, 1.05);
+        }
+
+        /* Länken fyller hela li */
+        a {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            border-radius: 1rem;
+            font-weight: var(--fw-semibold);
+            text-decoration: none;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+
+            >span {
+                margin-bottom: var(--m-small);
+            }
+        }
+    }
+}
+
+/* Två kolumner på större skärmar */
+@media (min-width: 100ch) {
+    #nvaMidPage {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+#midpageFullstack {
+    color: var(--clr-blue);
+    background-image: var(--gradient-blue);
+}
+
+#midpageProjekt {
+    color: var(--clr-green);
+    background-image: var(--graidient-green);
+}
+
+#midpageSkribent {
+    color: var(--clr-pink);
+    background-image: var(--gradient-pink);
+}
+
+#midpageKonstLedare {
+    color: var(--clr-yellow);
+    background-image: var(--gradient-yellow);
+}
+
+#kuriosaSection {
+    margin: var(--m-normal);
+
+    ul {
+        list-style-type: disc;
+    }
+}
+
+.jobbInfo {
+    font-size: var(--fs-small);
+}
+
+.developer {
+    background-image: var(--gradient-blue);
+}
+
+.projectlead {
+    background-image: var(--graidient-green);
+
+    >header {
+        background-color: var(--clr-green);
+    }
+}
+
+.writer {
+    background-image: var(--gradient-pink);
+
+    >header {
+        background-color: var(--clr-pink-dark);
+
+        .header-top a,
+        .kontakt a {
+            &:hover {
+                color: var(--clr-grey-light);
+            }
+        }
+    }
+}
+
+.dance {
+    background-image: var(--gradient-yellow);
+
+    >header {
+        background-color: var(--clr-yellow-dark);
+        color: black;
+
+        .header-top a,
+        .kontakt a {
+            color: black;
+
+            &:hover {
+                color: white;
+            }
+        }
+    }
+}
+
+.projects {
+    li {
+        margin-block-end: var(--m-normal);
+    }
+
+    a:hover {
+        color: var(--clr-pink);
+    }
+}
+
+.laddaNer {
+    background-color: var(--clr-blue);
+    padding: var(--m-small);
+    margin-block: var(--m-normal);
+    border-radius: var(--button-radius);
+    color: white;
+
+    a {
+        color: white;
+    }
+}
